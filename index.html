@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Shop</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Glider Carousel-->
+    <link rel="stylesheet" href="css/glide.core.min.css">
+    <link rel="stylesheet" href="css/glide.theme.min.css">
+
+    <!-- Animate on Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+   <!-- Header Section -->
+   <header id="header">
+    <div class="navbar">
+        <div class="container">
+            <div class="nav">
+                <div class="hamburger-menu" onclick="openMenu()">
+                    <i  class="fas fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <a href="#">PHONE</a>
+                </div>
+                <div class="nav-menu">
+                    <div class="menu-top">
+                        <a href="#">PHONE</a>
+
+                    </div>
+                    <nav class="nav-items" id="nav-items">
+                        <div class="close-btn" onclick="closeMenu()">
+                            <i class="fas fa-times"></i>
+                        </div>
+                        <ul>
+                             <li><a href="#header">HOME</a></li>
+                             <li><a href="#category">CATEGORY</a></li>
+                             <li><a href="#blog">BLOG</a></li>
+                             <li><a href="#footer">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="icons">
+                    <i class="fas fa-user-tie"></i>
+                    <i class="fas fa-search"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+   </header>
+   <!-- Hero Section -->
+   <section id="banner">
+    <div class="container" data-aos="fade-up" data-aos-duration="1000">
+        <div class="glide" id="glide-1">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                    <div class="hero-center">
+                        <div class="hero-text">
+                            <span>New Inspiration 2020</span>
+                            <h2>Phones Made for You</h2>
+                            <p>Trending from mobile and headphone collection</p>
+                            <a href="" class="btn">Shop Now</a>
+                        </div>
+                        <div class="hero-img">
+                            <img src="images/banner_01.png" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li class="glide__slide">
+                    <div class="hero-center">
+                        <div class="hero-text">
+                            <span>New Inspiration 2020</span>
+                            <h2>Phones Made for You</h2>
+                            <p>Trending from mobile and headphone collection</p>
+                            <a href="" class="btn">Shop Now</a>
+                        </div>
+                        <div class="hero-img">
+                            <img src="images/banner_02.png" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li class="glide__slide">
+                    <div class="hero-center">
+                        <div class="hero-text">
+                            <span>New Inspiration 2020</span>
+                            <h2>Phones Made for You</h2>
+                            <p>Trending from mobile and headphone collection</p>
+                            <a href="" class="btn">Shop Now</a>
+                        </div>
+                        <div class="hero-img">
+                            <img src="images/banner3.png" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li class="glide__slide">
+                    <div class="hero-center">
+                        <div class="hero-text">
+                            <span>New Inspiration 2020</span>
+                            <h2>Phones Made for You</h2>
+                            <p>Trending from mobile and headphone collection</p>
+                            <a href="" class="btn">Shop Now</a>
+                        </div>
+                        <div class="hero-img">
+                            <img src="images/banner4.png" alt="">
+                        </div>
+                    </div>
+                </li>
+              </ul>
+            </div>
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+                <button class="glide__bullet" data-glide-dir="=0"></button>
+                <button class="glide__bullet" data-glide-dir="=1"></button>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-chevron-left"></i></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-chevron-right"></i></button>
+            </div>
+          </div>
+    </div>
+   </section>
+
+   <!-- Collection Section -->
+   <section id="collection">
+       <div class="container" data-aos="fade-up" data-aos-duration="1000">
+           <div class="collection-container">
+            <div class="collection-box">
+                <div class="collection-img">
+                    <img src="./images/collection_02.png" alt="">
+                </div>
+                <div class="collection-content">
+                    <p>New Color Introduced</p>
+                    <h4>HEADPHONES</h4>
+                    <a href="#" class="btn">SHOP NOW</a>
+                </div>
+            </div>
+            <div class="collection-box">
+                <div class="collection-img">
+                    <img src="./images/collection_01.png" alt="">
+                </div>
+                <div class="collection-content">
+                    <p>New Color Introduced</p>
+                    <h4>HEADPHONES</h4>
+                    <a href="#" class="btn">SHOP NOW</a>
+                </div>
+           </div>
+        </div>
+       </div>
+   </section>
+
+   <!-- Latest Product -->
+   <section id="latest" data-aos="fade-up" data-aos-duration="1000">
+       <div class="title-container">
+           <div class="title">
+               <span class="dot"></span>
+               <h1>Latest Product</h1>
+           </div>
+       </div>
+       <div class="container">
+        <div class="glide" id="glide2">  
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                    <div class="latest-center">
+                        <div class="latest-img">
+                            <img src="./images/products/iPhone/iphone1.jpeg" alt="">
+                            <div class="hover-icons">
+                                <i class="far fa-eye"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                        </div>
+                        <div class="latest-content">
+                            <p>Apple iPhone 11</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>$550.00</span>
+                            <div class="cart-btn">
+                                <a href="">
+                                    <button type="button" class="product-btn">Add To Cart</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="glide__slide">
+                    <div class="latest-center">
+                        <div class="latest-img">
+                            <img src="./images/products/sumsung/samsung1.jpeg" alt="">
+                            <div class="hover-icons">
+                                <i class="far fa-eye"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                        </div>
+                        <div class="latest-content">
+                            <p>Samsung</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>$550.00</span>
+                            <div class="cart-btn">
+                                <a href="">
+                                    <button type="button" class="product-btn">Add To Cart</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="glide__slide">
+                    <div class="latest-center">
+                        <div class="latest-img">
+                            <img src="./images/products/headphone/headphone1.jpeg" alt="">
+                            <div class="hover-icons">
+                                <i class="far fa-eye"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                        </div>
+                        <div class="latest-content">
+                            <p>Apple iPhone 11</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>$550.00</span>
+                            <div class="cart-btn">
+                                <a href="">
+                                    <button type="button" class="product-btn">Add To Cart</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="glide__slide">
+                    <div class="latest-center">
+                        <div class="latest-img">
+                            <img src="./images/products/sumsung/samsung2.jpeg" alt="">
+                            <div class="hover-icons">
+                                <i class="far fa-eye"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                        </div>
+                        <div class="latest-content">
+                            <p>Apple iPhone 11</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>$550.00</span>
+                            <div class="cart-btn">
+                                <a href="">
+                                    <button type="button" class="product-btn">Add To Cart</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+              </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-long-arrow-alt-right"></i></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-long-arrow-alt-left"></i></button>
+            </div>
+          </div>
+       </div>
+   </section>
+   <!-- Category Section -->
+   <section id="category" data-aos="fade-up" data-aos-duration="1000">
+    <div class="category-title-container">
+        <div class="category-title">
+            <button type="button" class="active" data-filter=".all">All Product</button>
+            <button type="button"  data-filter=".trending">Trending Product</button>
+            <button type="button" data-filter=".special">Special Product</button>
+            <button type="button"  data-filter=".featured">Featured Product</button>
+        </div>
+    </div>
+    <div class="container grid">
+        <div class="category-container">
+            <div class="mix category-item all special">
+                <div class="category-img">
+                    <img src="./images/products/sumsung/samsung2.jpeg" alt="">
+                    <div class="hover-icons">
+                        <i class="far fa-eye"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                </div>
+                <div class="category-content">
+                    <p>Apple iPhone 11</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span>$550.00</span>
+                    <div class="cart-btn">
+                        <a href="">
+                            <button type="button" class="product-btn">Add To Cart</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mix category-item all special">
+                <div class="category-img">
+                    <img src="./images/products/iPhone/iphone1.jpeg" alt="">
+                    <div class="hover-icons">
+                        <i class="far fa-eye"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                </div>
+                <div class="category-content">
+                    <p>Apple iPhone 11</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span>$550.00</span>
+                    <div class="cart-btn">
+                        <a href="">
+                            <button type="button" class="product-btn">Add To Cart</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mix category-item all trending">
+                <div class="category-img">
+                    <img src="./images/products/sumsung/samsung3.jpeg" alt="">
+                    <div class="hover-icons">
+                        <i class="far fa-eye"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                </div>
+                <div class="category-content">
+                    <p>Apple iPhone 11</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span>$550.00</span>
+                    <div class="cart-btn">
+                        <a href="">
+                            <button type="button" class="product-btn">Add To Cart</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mix category-item all special">
+                <div class="category-img">
+                    <img src="./images/products/sumsung/samsung4.jpeg" alt="">
+                    <div class="hover-icons">
+                        <i class="far fa-eye"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                </div>
+                <div class="category-content">
+                    <p>Apple iPhone 11</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span>$550.00</span>
+                    <div class="cart-btn">
+                        <a href="">
+                            <button type="button" class="product-btn">Add To Cart</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mix category-item all trending">
+                <div class="category-img">
+                    <img src="./images/products/iPhone/iphone2.jpeg" alt="">
+                    <div class="hover-icons">
+                        <i class="far fa-eye"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                </div>
+                <div class="category-content">
+                    <p>Apple iPhone 11</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span>$550.00</span>
+                    <div class="cart-btn">
+                        <a href="">
+                            <button type="button" class="product-btn">Add To Cart</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mix category-item all trending">
+                <div class="category-img">
+                    <img src="./images/products/iPhone/iphone3.jpeg" alt="">
+                    <div class="hover-icons">
+                        <i class="far fa-eye"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                </div>
+                <div class="category-content">
+                    <p>Apple iPhone 11</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span>$550.00</span>
+                    <div class="cart-btn">
+                        <a href="">
+                            <button type="button" class="product-btn">Add To Cart</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mix category-item all trending">
+                <div class="category-img">
+                    <img src="./images/products/sumsung/samsung5.jpeg" alt="">
+                    <div class="hover-icons">
+                        <i class="far fa-eye"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                </div>
+                <div class="category-content">
+                    <p>Apple iPhone 11</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span>$550.00</span>
+                    <div class="cart-btn">
+                        <a href="">
+                            <button type="button" class="product-btn">Add To Cart</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mix category-item all special featured">
+                <div class="category-img">
+                    <img src="./images/products/iPhone/iphone1.jpeg" alt="">
+                    <div class="hover-icons">
+                        <i class="far fa-eye"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                </div>
+                <div class="category-content">
+                    <p>Apple iPhone 11</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span>$550.00</span>
+                    <div class="cart-btn">
+                        <a href="">
+                            <button type="button" class="product-btn">Add To Cart</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mix category-item all special">
+                <div class="category-img">
+                    <img src="./images/products/sumsung/samsung3.jpeg" alt="">
+                    <div class="hover-icons">
+                        <i class="far fa-eye"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                </div>
+                <div class="category-content">
+                    <p>Apple iPhone 11</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span>$550.00</span>
+                    <div class="cart-btn">
+                        <a href="">
+                            <button type="button" class="product-btn">Add To Cart</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mix category-item all trending featured">
+                <div class="category-img">
+                    <img src="./images/products/sumsung/samsung6.jpeg" alt="">
+                    <div class="hover-icons">
+                        <i class="far fa-eye"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                </div>
+                <div class="category-content">
+                    <p>Apple iPhone 11</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span>$550.00</span>
+                    <div class="cart-btn">
+                        <a href="">
+                            <button type="button" class="product-btn">Add To Cart</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mix category-item all trending">
+                <div class="category-img">
+                    <img src="./images/products/iPhone/iphone4.jpeg" alt="">
+                    <div class="hover-icons">
+                        <i class="far fa-eye"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                </div>
+                <div class="category-content">
+                    <p>Apple iPhone 11</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span>$550.00</span>
+                    <div class="cart-btn">
+                        <a href="">
+                            <button type="button" class="product-btn">Add To Cart</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mix category-item all trending featured">
+                <div class="category-img">
+                    <img src="./images/products/headphone/headphone2.jpeg" alt="">
+                    <div class="hover-icons">
+                        <i class="far fa-eye"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                </div>
+                <div class="category-content">
+                    <p>Apple iPhone 11</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span>$550.00</span>
+                    <div class="cart-btn">
+                        <a href="">
+                            <button type="button" class="product-btn">Add To Cart</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mix category-item all trending featured">
+                <div class="category-img">
+                    <img src="./images/products/headphone/headphone10.jpeg" alt="">
+                    <div class="hover-icons">
+                        <i class="far fa-eye"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                </div>
+                <div class="category-content">
+                    <p>Apple iPhone 11</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span>$550.00</span>
+                    <div class="cart-btn">
+                        <a href="">
+                            <button type="button" class="product-btn">Add To Cart</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+   <!-- Facility Section -->
+   <section id="facility">
+       <div class="container" data-aos="fade-up" data-aos-duration="1000">
+           <div class="facility-container">
+               <div class="facility-item">
+                    <div class="icon-container">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <p>FREE SHIPPING WORLD WIDE</p>
+               </div>
+               <div class="facility-item">
+                <div class="icon-container">
+                    <i class="fas fa-credit-card"></i>
+                </div>
+                    <p>100% MONEY BACK GUARANTEE</p>
+               </div>
+               <div class="facility-item">
+                    <div class="icon-container">
+                        <i class="far fa-credit-card"></i>
+                    </div>
+                    <p>MANY PAYMENT GATEWAYS</p>
+               </div>
+               <div class="facility-item">
+                <div class="icon-container">
+                    <i class="fas fa-headphones"></i>
+                </div>
+                    <p>24/7 ONLINE SUPPORT</p>
+               </div>
+           </div>
+       </div>
+   </section>
+   <!--Testimonial Section -->
+   <section id="testimonial">
+       <div class="container" data-aos="fade-up" data-aos-duration="1000">
+        <div class="glide" id="glide3"> 
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                    <div class="testimonial-box">
+                        <div class="client-img">
+                            <img src="images/profile1.jpg" alt="">
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae fuga hic nesciunt tempore quibusdam consequatur eligendi unde officia ex quae.adipisicing elit. Recusandae fuga hic nesciunt tempore quibusdam consequatur eligendi unde officia ex quae. hic nesciunt tempore</p>
+                        <div class="client-info">
+                            <h5>John Smith</h5>
+                            <p>Founder at Apple</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="glide__slide">
+                    <div class="testimonial-box">
+                        <div class="client-img">
+                            <img src="images/profile2.jpg" alt="">
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae fuga hic nesciunt tempore quibusdam consequatur eligendi unde officia ex quae.adipisicing elit. Recusandae fuga hic nesciunt tempore quibusdam consequatur eligendi unde officia ex quae. hic nesciunt tempore</p>
+                        <div class="client-info">
+                            <h5>John Smith</h5>
+                            <p>Founder at Apple</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="glide__slide">
+                    <div class="testimonial-box">
+                        <div class="client-img">
+                            <img src="images/profile3.jpg" alt="">
+                        </div>
+                        <p class="testimonial-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae fuga hic nesciunt tempore quibusdam consequatur eligendi unde officia ex quae.adipisicing elit. Recusandae fuga hic nesciunt tempore quibusdam consequatur eligendi unde officia ex quae. hic nesciunt tempore</p>
+                        <div class="client-info">
+                            <h5>John Smith</h5>
+                            <span>Founder at Apple</span>
+                        </div>
+                    </div>
+                </li>
+              </ul>
+            </div>
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+                <button class="glide__bullet" data-glide-dir="=0"></button>
+                <button class="glide__bullet" data-glide-dir="=1"></button>
+                <button class="glide__bullet" data-glide-dir="=2"></button>
+            </div>
+          </div>
+       </div>
+   </section>
+   <!-- Blog Section -->
+   <section id="blog" data-aos="fade-up" data-aos-duration="1000">
+       <div class="title-container">
+           <div class="title">
+               <span class="dot"></span>
+               <h1>Blog</h1>
+           </div>
+       </div>
+       <div class="container">
+        <div class="glide" id="glide4"> 
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                    <div class="blog-container">
+                        <div class="blog-box">
+                            <div class="blog-img">
+                                <img src="images/news1.jpg" alt="">
+                                
+                            </div>
+                            <div class="blog-content">
+                                <h2>Styling White Shirts After a Cool Day</h2>
+                                <span>By Admin</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates aperiam nostrum optio itaque asperiores veniam et neque inventore accusamus ratione.</p>
+                                <a href="" class="btn">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="glide__slide">
+                    <div class="blog-container">
+                        <div class="blog-box">
+                            <div class="blog-img">
+                                <img src="images/news2.jpg" alt="">
+                                
+                            </div>
+                            <div class="blog-content">
+                                <h2>Styling White Shirts After a Cool Day</h2>
+                                <span>By Admin</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates aperiam nostrum optio itaque asperiores veniam et neque inventore accusamus ratione.</p>
+                                <a href="" class="btn">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="glide__slide">
+                    <div class="blog-container">
+                        <div class="blog-box">
+                            <div class="blog-img">
+                                <img src="images/news3.jpg" alt="">
+                                
+                            </div>
+                            <div class="blog-content">
+                                <h2>Styling White Shirts After a Cool Day</h2>
+                                <span>By Admin</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates aperiam nostrum optio itaque asperiores veniam et neque inventore accusamus ratione.</p>
+                                <a href="" class="btn">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+       </div>
+   </section>
+   <hr>
+ <!--Newslatter section  -->
+ <section id="newsletter">
+    <div class="container" data-aos="fade-up" data-aos-duration="1000">
+        <div class="newsletter-box">
+            <div class="newletter-text">
+                <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+                <p>A short sentence describing what someone will receive by subscribing</p>
+            </div>
+            <form>
+                <input type="email" placeholder="Enter Your Email Address">
+                <a href="#" class="btn">Subscribe</a>
+            </form>
+        </div>
+    </div>
+ </section>
+ <!--   Footer Section -->
+ 
+ <section id="footer">
+     <div class="container" data-aos="fade-up" data-aos-duration="1000">
+         <div class="footer-container">
+             <div class="footer-box">
+                <h3>EXTRAS</h3>
+                <a href="">Brands</a>
+                <a href="">Gift Certificates</a>
+                <a href="">Affiliate</a>
+                <a href="">Specials</a>
+                <a href="">Site Map</a>
+             </div>
+             <div class="footer-box">
+                 <h3>INFORMATION</h3>
+                 <a href="">About Us</a>
+                 <a href="">Privacy Policy</a>
+                 <a href="">Terms & Conditions</a>
+                 <a href="">Contact Us</a>
+                 <a href="">Site Map</a>
+             </div>
+             <div class="footer-box">
+                 <h3>MY ACCOUNT</h3>
+                 <a href="">My Account</a>
+                 <a href="">Order History</a>
+                 <a href="">Wish List</a>
+                 <a href="">Newsletter</a>
+                 <a href="">Returns</a>
+             </div>
+             <div class="footer-box">
+                 <h3>CONTACT US</h3>
+                 <a href=""><i class="fas fa-map-marker-alt"></i> 42 Dream Hourse, Dreammy street, 7131 <span>Dreamville, USA</span></a>
+                 <a href=""><i class="far fa-envelope"></i> company@gmail.com</a>
+                 <a href=""><i class="fas fa-phone-alt"></i> 456-456-4512</a>
+                 <a href=""><i class="far fa-paper-plane"></i> Dream City, USA</a>
+             </div>
+         </div>
+     </div>
+ </section>
+
+
+<!-- Glider Carousel -->
+<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+<script src="js/glide.js"></script>
+
+<!-- Animate on Scroll -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- MixitUp -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js" ></script>
+<script>
+    var mixer = mixitup('.grid');
+</script>
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/05366a25da.js" crossorigin="anonymous"></script>
+
+<!-- Smooth Scroll -->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script>
+
+<!-- Custom JS -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

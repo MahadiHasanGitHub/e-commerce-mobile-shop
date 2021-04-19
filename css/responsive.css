@@ -1,0 +1,239 @@
+
+@media only screen and (max-width: 1050px){
+    #collection .collection-box{
+        flex-basis: 70%;
+        margin: 0 auto 30px;
+        padding: 20px 50px;
+    }
+    #newsletter .newsletter-box{
+        text-align: center;
+    }
+    #newsletter .newletter-text,
+    #newsletter form{
+        flex-basis: 100%;
+    }
+    #newsletter .newletter-text{
+        margin-bottom: 20px;
+    }
+    .facility-item{
+        flex-basis: 50%;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .hero-center{
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text{
+        flex-basis: 100%;
+        margin-top: 100px;
+    }
+    .hero-text .btn{
+        margin-bottom: 10px;
+    }
+    .hero-img{
+        flex-basis: 100%;
+    }
+    #category .category-item{
+        flex-basis: 33.33%;
+    }
+    #footer .footer-box{
+        flex-basis: 50%;
+        margin-bottom: 30px;
+
+    }
+}
+@media only screen and (max-width: 720px){
+    .hamburger-menu{
+        display: block;
+        font-size: 25px;
+    }
+    #header nav ul{
+        margin-top: 10px;
+    }
+    #header nav ul li a{
+        font-size: 14px;
+    }
+    #header nav ul li+li{
+        margin-left: 0px;
+    }
+    #header nav{
+        width: 40%;
+    }
+     .close-btn{
+        display: block;
+        cursor: pointer;
+        color: #fff;
+        position: absolute;
+        left: 80%;
+        top: 27px;
+    }
+    .nav-items{
+        position: fixed;
+        left: -40%; 
+        top: 0;
+        overflow: hidden;
+        width: 100px;
+        height: 100%;
+        background: #fff;
+        transition: .5s;
+        
+    }
+    .nav-items .close-btn i{
+        font-size: 21px;
+        color: #666;
+    }
+    #header nav ul li{
+        display: block;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    #header nav ul li a{
+        color: #666;
+        font-size: 16px;
+        margin-left: 20px;
+        font-weight: bold;
+        transition: .5s;
+    }
+    #header nav ul li a:hover{
+        color: var(--orange);
+    }
+    #collection img{
+        height: 180px;
+    }
+    #collection .collection-content p{
+        font-size: 15px;
+     }
+     #collection .collection-content h4{
+        font-size: 20px;
+     }
+     #collection .collection-content .btn{
+        font-size: 12px;
+        width: 110px;
+     }
+     #category .category-title{
+        margin: auto;
+        padding: 6px 25px;
+        background: #f1f1f1;
+        display: block;
+        text-align: center;
+    }
+    #category .category-title button{
+        font-size: 16px;   
+        display: block;
+        text-align: center;
+    }
+    #category .category-title button+button{
+        margin-left: 0px; 
+    }
+}
+
+/* banner section */
+@media only screen and (max-width: 650px){
+    #category .category-item{
+        flex-basis: 50%;
+    }
+}
+
+/* Collection Section*/
+
+@media only screen and (max-width: 600px){
+    #collection .collection-box{
+        text-align: center;
+    }
+    #collection .collection-content p{
+        margin-top: 10px;
+     }
+     #collection .collection-box{
+        padding: 20px
+    }
+     #banner .hero-img{
+        display: none;
+    }
+    #banner .glide__track{
+        padding-bottom: 100px;
+    }
+    #newsletter form input{
+        width: 300px;
+        margin-bottom: 10px;
+    }
+    .facility-item{
+        flex-basis: 100%;
+    }
+}
+
+
+
+@media only screen and (max-width: 520px){
+    #collection .collection-box{
+        flex-direction: column;
+    }
+    #footer .footer-box{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    #newsletter form .btn{
+        width: 120px;
+        font-size: 13px;
+    }
+    #newsletter .newsletter-box h3{
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: .8px;
+    }
+    #newsletter .newsletter-box p{
+        font-size: 13px;
+        margin-top: 10px;
+    }
+    #latest .latest-img .hover-icons{
+        width: 120px;
+        padding: 3px 0;
+    }
+    #latest .latest-img .hover-icons i{
+        padding: 5px;
+        font-size: 12px;
+    }
+    #category .category-img .hover-icons{
+        width: 120px;
+        padding: 3px 0;
+    }
+    #category .category-img .hover-icons i{
+        padding: 5px;
+        font-size: 12px;
+    }
+    #header .nav .logo a{
+        font-size: 22px;
+    }
+    #header .nav .icons i{
+        padding: 6px;
+        font-size: 12px;
+    }
+    .navbar{
+        padding: 15px 0;
+    }
+    .hamburger-menu{
+        font-size: 22px;
+    }
+
+
+}
+@media only screen and (max-width: 450px){
+    #category .category-item{
+        flex-basis: 100%;
+    }
+    #blog .blog-content p{
+        line-height: 1.5;
+    }
+}
+
+@media only screen and (max-width: 330px){
+    .hamburger-menu{
+        display: block;
+        font-size: 20px;
+    }
+    #newsletter form input{
+        width: 180px;
+    }
+
+}
